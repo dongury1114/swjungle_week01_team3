@@ -18,6 +18,7 @@ for i in range (1, n+1):
             count += 1
 print(count)
 # - 미완성 -
+#문자열은 리스트를 만들지 안아도 인덱싱이 가능 대신 인덱싱한 값을 연산시 정수로 변환
 #sol.2
 import sys
 sys.stdin = open("input.txt", "rt")

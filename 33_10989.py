@@ -1,5 +1,4 @@
-# sol.1 - 반복문(while)
-from math import factorial
+# sol.1
 import sys
 sys.stdin = open("input.txt", "rt")
 input = sys.stdin.readline

@@ -2,6 +2,7 @@
 from itertools import permutations
 import sys
 sys.stdin = open("input.txt", "rt")
+
 # input = sys.stdin.readline
 
 n, k= int(input()), int(input())
@@ -27,3 +28,5 @@ print(len(result))
 #set() : 집합자료형 변환 함수 -> 중복요소 제거
 #''.join(리스트): 리스트에 있는 요소 하나하나를 합쳐서 문자열로 반환
 #리스트 개행문자!!!! ㅅㅂ
+# https://heytech.tistory.com/78
+# https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%A6%ACsys.stdin.readline
