@@ -5,33 +5,16 @@ sys.stdin = open("input.txt", "rt")
 input = sys.stdin.readline
 
 n = int(input())
+number =[]
+for i in range(n):
+    number.append(int(input()))
+number.sort()
+for i in number:
+    print(i)
 
-result = 1
-i=1
-while i <= n:
-    result *= i
-    i += 1
-print(result)
 
-# sol.2 - 반복문(for)
-import sys
-sys.stdin = open("input.txt", "rt")
-input = sys.stdin.readline
+#-풀어보기-
+#버블정렬
 
-n = int(input())
-result = 1
-if n> 0:
-    for i in range(1,n+1):
-        result *= i
-print(result)
+#삽입정렬
 
-# sol.3 - 재귀함수
-
-def factorial(n):
-    result = 1
-    if n > 0:
-        result = n * factorial(n-1)
-    return result
-
-n = int(input())
-print(factorial(n))
