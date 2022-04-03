@@ -1,5 +1,4 @@
 # sol.1 - 반복문(while)
-from math import factorial
 import sys
 sys.stdin = open("input.txt", "rt")
 input = sys.stdin.readline
@@ -13,7 +12,7 @@ for i in number:
     print(i)
 
 
-#-풀어보기-
+#-풀어보기 개념 부터 학습해보자-
 #버블정렬
 
 #삽입정렬
