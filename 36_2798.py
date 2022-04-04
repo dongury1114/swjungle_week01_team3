@@ -13,6 +13,7 @@ for i in combinations(card_list,3):
     if tmp <= M:
         A.append(tmp)
 print(max(A))
+
 # sol.2
 # from itertools import combinations
 # import sys

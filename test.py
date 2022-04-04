@@ -1,15 +1,18 @@
-from itertools import permutations
 import sys
 sys.stdin = open("input.txt", "rt")
 
-n, k = int(input()), int(input())
-nums = []
-result = set()
-for i in range(n):
-    num = input()
-    nums.append(num)
-print(nums)
-# for per in permutations(nums, k):
-#     result.add(''.join(per))
-    
-# print(len(result))
+N, r, c = map(int, input().split())
+n = 4 ** N
+ans = 0
+for i in range(N):
+    R = r//(2**(N-1))
+    C = c//(2**(N-1))
+    t = 2*R + C
+    r -= 2**(N-1) * R
+    c -= 2**(N-1) * C
+
+    carry = 4 ** (N-1) * t
+    n //= 4
+    N -= 1
+    ans += carry
+print(ans)

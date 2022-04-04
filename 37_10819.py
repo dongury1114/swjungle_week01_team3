@@ -5,7 +5,7 @@ sys.stdin = open("input.txt", "rt")
 # input = sys.stdin.readline
 
 N = int(input())
-A = list(map(int,input().split()))
+A = list(map(int,input().split())) 
 sum= 0
 
 
