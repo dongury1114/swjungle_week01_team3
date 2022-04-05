@@ -8,7 +8,7 @@ a= list(sentence.split())
 print(len(a))
 
 # sol.2
-a = input().split
+a = input().split()
 print(len(a))
 
 # sol.3

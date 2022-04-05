@@ -1,11 +1,9 @@
 import sys
 sys.stdin = open("input.txt", "rt")
-n = int(input())
 
-for i in range(n):
-    num, s = input().split()
-    num = int(num)
-    s = str(s)
-    for i in range(len(s)):
-        print(s[i] * num, end="")
-    print()
+A, B  = map(int, input().split())
+
+if str(A)[::-1] >str(B)[::-1]:
+    print(str(A)[::-1])
+else:
+    print(str(B)[::-1])
