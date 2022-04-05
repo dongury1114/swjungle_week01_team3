@@ -1,7 +1,7 @@
 # sol.1
 import sys
-sys.stdin = open("input.txt", "rt")
-input = sys.stdin.readline
+# sys.stdin = open("input.txt", "rt")
+# input = sys.stdin.readline
 
 n = int(input())
 for i in range(1,n+1):

@@ -28,3 +28,4 @@ print(num_list.index(max(num_list))+1)
 #list.append(값): 기존 리스트에 값을 추가한다.
 #list.insert(인덱스, 값): 리스트에 인덱스로 지정한 위치에 값을 넣을 수 있다.
 #list.extend
+

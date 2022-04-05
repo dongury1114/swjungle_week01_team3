@@ -1,7 +1,6 @@
 # sol.1
 import sys
 sys.stdin = open("input.txt", "rt")
-input = sys.stdin.readline
 
 n = int(input())
 
@@ -15,7 +14,6 @@ for _ in range(n): # n번 반복을 해서 각각 체점
             sum_score += score
         else:
             score = 0 #연속되지 않을때 점수를 더하지 않을 뿐더러 연속성이 되지 않도록 지점생성
-
     print(sum_score)
     
     

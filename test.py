@@ -1,18 +1,11 @@
 import sys
 sys.stdin = open("input.txt", "rt")
+n = int(input())
 
-N, r, c = map(int, input().split())
-n = 4 ** N
-ans = 0
-for i in range(N):
-    R = r//(2**(N-1))
-    C = c//(2**(N-1))
-    t = 2*R + C
-    r -= 2**(N-1) * R
-    c -= 2**(N-1) * C
-
-    carry = 4 ** (N-1) * t
-    n //= 4
-    N -= 1
-    ans += carry
-print(ans)
+for i in range(n):
+    num, s = input().split()
+    num = int(num)
+    s = str(s)
+    for i in range(len(s)):
+        print(s[i] * num, end="")
+    print()

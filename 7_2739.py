@@ -1,4 +1,4 @@
-# sol.1
+# # sol.1
 a = int(input())
 b = 0
 
