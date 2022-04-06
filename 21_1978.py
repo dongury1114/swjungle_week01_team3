@@ -11,23 +11,36 @@
 # sol.2
 import sys
 sys.stdin = open("input.txt", "rt")
-input = sys.stdin.readline
+# input = sys.stdin.readline
+
+# n = int(input())
+# numbers = list(map(int, input().split()))
+# count =0
+
+# for num in numbers:
+#     tmp = 0
+#     if num >1:
+#         for i in range (2, num):
+#             if num % i == 0:
+#                 tmp += 1
+#         if tmp == 0:
+#             count += 1
+# print(count)
 
 n = int(input())
-numbers = list(map(int, input().split()))
-count =0
+numbers  = list(map(int, input().split()))
+count = 0
+tmp = 0
 
 for num in numbers:
     tmp = 0
-    if num >1:
-        for i in range (2, num):
+    if num > 1:
+        for i in range(2, num):
             if num % i == 0:
                 tmp += 1
         if tmp == 0:
             count += 1
 print(count)
-
-
 # for num in numbers:
 #     error = 0
 #     if num >1:
