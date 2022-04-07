@@ -27,11 +27,10 @@ print(result)
 
 # sol.3 - 재귀함수
 
-def factorial(n):
-    result = 1
-    if n > 0:
-        result = n * factorial(n-1)
-    return result
-
 n = int(input())
-print(factorial(n))
+def fac (m):
+    if m == 1:
+        return 1
+    else:
+        return m * fac(m-1)
+print(fac(n))
